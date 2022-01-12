@@ -7,6 +7,7 @@ import Clients from './pages/Clients';
 import Products from './pages/Products';
 import PlansAndGoals from './pages/Plans'
 import Configuration from './pages/Configuration'
+import Exit from './pages/Exit';
 import Error from './pages/Error';
 
 const Routes = () => {
@@ -19,6 +20,7 @@ const Routes = () => {
       <Route exact path="/products" element={<Products />} />
       <Route exact path="/plans" element={<PlansAndGoals />} />
       <Route exact path="/configuration" element={<Configuration />} />
+      <Route exact path="/exit" element={<Exit />} />
       <Route path="*" element={<Error />} />
     </Switch>
   );

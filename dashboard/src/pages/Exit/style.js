@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 
-const StoresContentContainer = styled.div`
+const ExitContentContainer = styled.div`
   padding-left: 260px;
   width: 100vw;
   height: 100vh;
@@ -17,4 +17,4 @@ const StoresContentContainer = styled.div`
   }
 `
 
-export {StoresContentContainer}
+export {ExitContentContainer}

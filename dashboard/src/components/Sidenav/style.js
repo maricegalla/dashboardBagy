@@ -17,8 +17,9 @@ const SidenavContainer = styled.div`
   .logo {
     margin-bottom: 40px;
   }
-  
-  a:active, a:focus {
+
+  a:active,
+  a:focus {
     color: #fff;
     background-color: #463747 !important;
     border: 1px solid #fff;

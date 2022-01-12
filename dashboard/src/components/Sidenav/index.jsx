@@ -9,6 +9,7 @@ import clients from 'src/assets/clients.svg';
 import products from 'src/assets/products.svg';
 import plans from 'src/assets/plans.svg';
 import config from 'src/assets/config.svg';
+import exit from 'src/assets/exit.svg';
 
 const sideNavContent = [
   { name: 'Visão Geral', link: '/', image: graph },
@@ -18,6 +19,7 @@ const sideNavContent = [
   { name: 'Produtos', link: '/products', image: products },
   { name: 'Planos e Metas', link: '/plans', image: plans },
   { name: 'Configurações', link: '/configuration', image: config },
+  { name: 'Sair', link: '/exit', image: exit },
 ];
 
 const Sidenav = () => {
