@@ -1,12 +1,16 @@
 import React from 'react';
 import { ClientsContentContainer } from './style';
 import logoPink from 'src/assets/logoPink.png';
+import Header from 'src/components/Header';
 
 const Clients = () => {
   return (
     <ClientsContentContainer>
-      <img src={logoPink} alt='logo'/>
-      <h1>Clientes</h1>
+      <Header section={'Clientes'} />
+      <div className={'baggy'}>
+        <img src={logoPink} alt="logo" />
+        <h1>Clientes</h1>
+      </div>
     </ClientsContentContainer>
   );
 };

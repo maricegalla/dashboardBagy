@@ -8,5 +8,6 @@
   scroll-behavior: smooth;
   box-sizing: border-box;
   max-width: 100%;
+  scroll-margin-left: 260px;
   font-family: 'Inter', sans-serif;
 }

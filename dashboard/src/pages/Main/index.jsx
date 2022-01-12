@@ -5,7 +5,7 @@ import Header from 'src/components/Header';
 const Main = () => {
   return (
     <MainContentContainer>
-      <Header />
+      <Header section={'Visão Geral'}/>
     </MainContentContainer>
   );
 };

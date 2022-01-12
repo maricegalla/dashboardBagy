@@ -1,19 +1,23 @@
 import styled from 'styled-components'
 
 const PlansAndGoalsContentContainer = styled.div`
-  padding-left: 260px;
-  width: 100vw;
+padding-left: 260px;
   height: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 30px;
-  color: #E55C8B;
-  font-weight: 700;
+  width: 100vw;
 
-  img {
-    width: 20%;
+  .baggy {
+    padding-top: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    color: #e55c8b;
+    font-weight: 700;
+
+    img {
+      width: 20%;
+    }
   }
 `
 
