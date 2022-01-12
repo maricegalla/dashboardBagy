@@ -10,8 +10,10 @@ const SidenavContainer = styled.div`
   gap: 46px;
   justify-content: flex-start;
   align-items: right;
-  color: #A4A6B3;
+  color: #a4a6b3;
   font-size: 11px;
-  font-height: 400;
+  font-weight: 400;
+  position: fixed;
+  z-index: 1;
 `;
 export { SidenavContainer };
