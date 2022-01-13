@@ -1,0 +1,68 @@
+{ "stores" : [
+  {
+    "id": 1,
+    "name": "Estilo Pri",
+    "sales": 250,
+    "totalIncome": 4238.0
+  },
+  {
+    "id": 2,
+    "name": "Vilma Calçados",
+    "sales": 187,
+    "totalIncome": 1005.0
+  },
+  {
+    "id": 3,
+    "name": "Mary Lingerie",
+    "sales": 124,
+    "totalIncome": 914.0
+  },
+  {
+    "id": 4,
+    "name": "Loja Belíssima",
+    "sales": 89,
+    "totalIncome": 218.0
+  }
+],
+"products": [
+  {
+    "id": 1,
+    "productName": "Brincos",
+    "prductId": "#023",
+    "productPrice": 23.9,
+    "date": "2020-07-17",
+    "storeId": 1
+  },
+  {
+    "id": 2,
+    "productName": "Sandália",
+    "prductId": "#54",
+    "productPrice": 89.9,
+    "date": "2020-07-17",
+    "storeId": 2
+  },
+  {
+    "id":3,
+    "productName": "Conjunto",
+    "prductId": "#95",
+    "productPrice": 49.9,
+    "date": "2020-07-17",
+    "storeId": 3
+  },
+ {
+    "id":4,
+    "productName": "Body",
+    "prductId": "#77",
+    "productPrice": 19.9,
+    "date": "2020-07-17",
+    "storeId": 4
+  }
+],
+"mainInfo":[{
+  "id": 1,
+  "totalIncome": "100.000,00",
+  "numberOfStores": 7213.00,
+  "monthlyGoal": "110.000,00",
+  "featuredStore": "Estilo Pri"
+}]
+}

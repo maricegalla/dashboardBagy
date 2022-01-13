@@ -5,7 +5,7 @@ padding-left: 260px;
   height: 100vh;
   width: 100vw;
 
-  .baggy {
+  .bagy {
     padding-top: 100px;
     display: flex;
     flex-direction: column;

@@ -5,7 +5,7 @@ const ConfigurationContentContainer = styled.div`
   height: 100vh;
   width: 100vw;
 
-  .baggy {
+  .bagy {
     padding-top: 100px;
     display: flex;
     flex-direction: column;

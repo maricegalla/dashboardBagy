@@ -7,7 +7,7 @@ const Sales = () => {
   return (
     <SalesContentContainer>
       <Header section={'Vendas'} />
-      <div className={'baggy'}>
+      <div className='bagy'>
         <img src={logoPink} alt="logo" />
         <h1>Vendas</h1>
       </div>

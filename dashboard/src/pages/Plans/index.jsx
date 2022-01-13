@@ -7,7 +7,7 @@ const PlansAndGoals = () => {
   return (
     <PlansAndGoalsContentContainer>
       <Header section={'Planos e Metas'} />
-      <div className={'baggy'}>
+      <div className='bagy'>
         <img src={logoPink} alt="logo" />
         <h1>Planos e Metas</h1>
       </div>

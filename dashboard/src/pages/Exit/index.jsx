@@ -6,7 +6,7 @@ import Header from 'src/components/Header';
 const Exit = () => {
   return <ExitContentContainer>
     <Header section={'Sair'} />
-    <div className={'baggy'}>
+    <div className='bagy'>
 
     <img src={logoPink} alt='logo'/>
       <h1>Sair</h1>

@@ -22,7 +22,7 @@ const SidenavContainer = styled.div`
   a:focus {
     color: #fff;
     background-color: #463747 !important;
-    border: 1px solid #fff;
+    border: 1px solid #E5E5E5;
   }
 
   & > a {
