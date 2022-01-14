@@ -48,9 +48,9 @@ const LeftTable = () => {
             </div>
           ) : (
             <div key={store.id}>
-              <span className="border">{store.name}</span>
-              <p className="border">{store.sales} compras</p>
-              <p className="border">R$ {store.totalIncome},00</p>
+              <span className="noBorder">{store.name}</span>
+              <p className="noBorder">{store.sales} compras</p>
+              <p className="noBorder">R$ {store.totalIncome},00</p>
             </div>
           )
         )}

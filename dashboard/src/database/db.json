@@ -28,33 +28,33 @@
   {
     "id": 1,
     "productName": "Brincos",
-    "prductId": "#023",
-    "productPrice": 23.9,
-    "date": "2020-07-17",
+    "productId": "#023",
+    "productPrice": "23,90",
+    "date": "17/07/20",
     "storeId": 1
   },
   {
     "id": 2,
     "productName": "Sandália",
-    "prductId": "#54",
-    "productPrice": 89.9,
-    "date": "2020-07-17",
+    "productId": "#54",
+    "productPrice": "89,90",
+    "date": "17/07/20",
     "storeId": 2
   },
   {
     "id":3,
     "productName": "Conjunto",
-    "prductId": "#95",
-    "productPrice": 49.9,
-    "date": "2020-07-17",
+    "productId": "#95",
+    "productPrice": "49,90",
+    "date": "17/07/20",
     "storeId": 3
   },
  {
     "id":4,
     "productName": "Body",
-    "prductId": "#77",
-    "productPrice": 19.9,
-    "date": "2020-07-17",
+    "productId": "#77",
+    "productPrice": "19,90",
+    "date": "17/07/20",
     "storeId": 4
   }
 ],

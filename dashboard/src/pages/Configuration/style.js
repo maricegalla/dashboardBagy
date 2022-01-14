@@ -6,7 +6,7 @@ const ConfigurationContentContainer = styled.div`
   width: 100vw;
 
   .bagy {
-    padding-top: 200px;
+    padding-top: 150px;
     display: flex;
     flex-direction: column;
     align-items: center;

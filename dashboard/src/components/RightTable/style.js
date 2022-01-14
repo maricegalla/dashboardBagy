@@ -12,7 +12,7 @@ const MediumChartContainer = styled.div`
   padding: 5px;
 `;
 
-const LeftTableContainer = styled.div`
+const RightTableContainer = styled.div`
   display: flex;
   flex-direction: column;
   width: 100%;
@@ -27,29 +27,42 @@ const LeftTableContainer = styled.div`
     justify-content: center;
     height: 57px;
     width: 100%;
-    & > span {
-      display: flex;
-      align-items: center;
-      width: 100%;
-      border-bottom: 1px solid #e5e5e5;
-      font-size: 14px;
-      padding-left: 30px;
-      color: #252733;
-      font-weight: 500;
-      text-align: left;
-    }
 
     & > p {
       display: flex;
       align-items: center;
-      justify-content: right;
+      justify-content: left;
       width: 100%;
       border-bottom: 1px solid #e5e5e5;
-      font-size: 14px;
-      padding-right: 20px;
+      font-size: 12px;
+      padding-left: 30px;
       color: #9fa2b4;
       font-weight: 500;
       text-align: right;
+    }
+
+    .blue {
+      background-color: #2f80ed;
+      font-weight: 600;
+      width: 80%;
+      color: #fff;
+      height: 24px;
+      align-self: center;
+      justify-content: center;
+      padding: 0;
+      border-radius: 5px;
+    }
+
+    .yellow {
+      background-color: #fec400;
+      font-weight: 600;
+      width: 80%;
+      color: #fff;
+      height: 24px;
+      align-self: center;
+      justify-content: center;
+      padding: 0;
+      border-radius: 5px;
     }
   }
 `;
@@ -59,37 +72,20 @@ const TitleContainer = styled.div`
   align-items: center;
   width: 100%;
   height: 90px !important;
-  
 
   & div {
     display: flex;
-    flex-direction: column;
     width: 100%;
-    gap: 12px;
+    justify-content: space-around;
 
     & > h3 {
       font-size: 18px;
       color: #252733;
       font-weight: 600;
-      padding-left: 30px;
-    }
-
-    & > p {
-      font-size: 13px;
-      color: #2f80ed;
-      font-weight: 600;
-      padding-left: 30px;
-    }
-
-    & > span {
-      font-size: 14px;
-      color: #fc3c8d;
-      font-weight: 500;
-      text-align: right;
-      text-decoration: underline;
-      padding-right: 20px;
+      width: 80%;
+      text-align: center;
     }
   }
 `;
 
-export { MediumChartContainer, LeftTableContainer, TitleContainer };
+export { MediumChartContainer, RightTableContainer, TitleContainer };
