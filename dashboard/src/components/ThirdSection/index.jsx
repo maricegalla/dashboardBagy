@@ -1,16 +1,14 @@
 import React from 'react';
 import { ThirdSectionContainer } from './style';
 import MediumChart from 'src/components/MediumChart';
-
+import LeftTable from 'src/components/LeftTable';
 
 
 const FirstSection = () => {
-  
-
   return (
     <ThirdSectionContainer>
-      <MediumChart />
-      <MediumChart />
+      <LeftTable />
+      <MediumChart children={''}/>
     </ThirdSectionContainer>
   );
 };

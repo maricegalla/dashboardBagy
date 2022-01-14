@@ -1,9 +1,9 @@
 import React from 'react';
 import { MediumChartContainer } from './style';
 
-const MediumChart = () => {
+const MediumChart = (content) => {
   return (
-    <MediumChartContainer >
+    <MediumChartContainer>
       Teste
     </MediumChartContainer>
   );

@@ -6,7 +6,7 @@ padding-left: 260px;
   width: 100vw;
 
   .bagy {
-    padding-top: 100px;
+    padding-top: 200px;
     display: flex;
     flex-direction: column;
     align-items: center;
