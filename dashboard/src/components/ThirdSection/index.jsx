@@ -4,7 +4,7 @@ import LeftTable from 'src/components/LeftTable';
 import RightTable from 'src/components/RightTable';
 
 
-const FirstSection = () => {
+const ThirdSection = () => {
   return (
     <ThirdSectionContainer>
       <LeftTable />
@@ -13,4 +13,4 @@ const FirstSection = () => {
   );
 };
 
-export default FirstSection;
+export default ThirdSection;
