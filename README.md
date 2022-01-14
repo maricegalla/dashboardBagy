@@ -6,7 +6,7 @@ Implementar um dashboard de visualização de dados em ReactJs, sem uso de bibli
 
 ## Requisitos técnicos
 
- - Front-End em React.
+ - Front-End em ReactJs.
 
 ## Funcionalidades
 
