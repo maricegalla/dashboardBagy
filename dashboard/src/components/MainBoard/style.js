@@ -11,6 +11,58 @@ const BigChartContainer = styled.div`
   box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 `;
 
+const LeftSectionContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+`;
+
+const TableHeader = styled.div`
+  display: flex;
+  width: 100%;
+  height: 180px;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 65px 0 30px;
+
+  & > div {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    & > p {
+      display: flex;
+      align-items: center;
+      font-size: 12px;
+      color: #9fa2b4;
+      font-weight: 500;
+      gap: 5px;
+    }
+
+    & > h3 {
+      font-size: 18px;
+      color: #252733;
+      font-weight: 600;
+      text-align: left;
+    }
+
+    & > span {
+      font-size: 10px;
+      color: #9fa2b4;
+      font-weight: 700;
+    }
+  }
+
+  .rightSide{
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+  }
+`
+
 const RightSectionContainer = styled.div`
   display: flex;
   flex-direction: column;
@@ -53,4 +105,4 @@ const RightSectionContainer = styled.div`
   }
 `;
 
-export { BigChartContainer, RightSectionContainer };
+export { BigChartContainer, TableHeader, LeftSectionContainer, RightSectionContainer };

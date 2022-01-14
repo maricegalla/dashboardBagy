@@ -27,6 +27,7 @@ const LeftTableContainer = styled.div`
     justify-content: center;
     height: 57px;
     width: 100%;
+    
     & > span {
       display: flex;
       align-items: center;
