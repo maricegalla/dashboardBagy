@@ -20,7 +20,7 @@ const LeftSectionContainer = styled.div`
   height: 100%;
 `;
 
-const TableHeader = styled.div`
+const ChartHeader = styled.div`
   display: flex;
   width: 100%;
   height: 180px;
@@ -56,12 +56,18 @@ const TableHeader = styled.div`
     }
   }
 
-  .rightSide{
+  .rightSide {
     display: flex;
     flex-direction: row;
     gap: 50px;
   }
-`
+`;
+
+const ChartContainer = styled.div`
+  display: flex;
+  height: 100%;
+  width: 100%;
+`;
 
 const RightSectionContainer = styled.div`
   display: flex;
@@ -70,6 +76,10 @@ const RightSectionContainer = styled.div`
   width: 340px;
   height: 100%;
   border-left: 1px solid #e5e5e5;
+
+  .noBorder {
+    border: none !important;
+  }
 
   & > div {
     display: flex;
@@ -105,4 +115,10 @@ const RightSectionContainer = styled.div`
   }
 `;
 
-export { BigChartContainer, TableHeader, LeftSectionContainer, RightSectionContainer };
+export {
+  BigChartContainer,
+  ChartHeader,
+  ChartContainer,
+  LeftSectionContainer,
+  RightSectionContainer,
+};

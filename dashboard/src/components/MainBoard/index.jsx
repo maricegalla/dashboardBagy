@@ -1,7 +1,8 @@
 import React from 'react';
 import {
   BigChartContainer,
-  TableHeader,
+  ChartHeader,
+  ChartContainer,
   LeftSectionContainer,
   RightSectionContainer,
 } from './style';
@@ -21,7 +22,7 @@ const MainBoard = () => {
   return (
     <BigChartContainer>
       <LeftSectionContainer>
-        <TableHeader>
+        <ChartHeader>
           <div>
             <h3>Total de Faturamento Mensal</h3>
             <span>JULHO 2020</span>
@@ -30,7 +31,8 @@ const MainBoard = () => {
             <p><LegendPink/>Este mês</p>
             <p><LegendGray/>Mês passado</p>
           </div>
-        </TableHeader>
+        </ChartHeader>
+        <ChartContainer />
       </LeftSectionContainer>
       <RightSectionContainer>
         {leftSectionContent.map((content, index) => {
@@ -44,7 +46,7 @@ const MainBoard = () => {
           }
           if (content.title === 'Análise comparativa') {
             return (
-              <div key={index}>
+              <div key={index} className="noBorder">
                 <p>{content.title}</p>
                 <h2 className="green">{content.highlight}</h2>
               </div>
