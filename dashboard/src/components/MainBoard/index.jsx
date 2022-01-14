@@ -7,8 +7,9 @@ import {
   RightSectionContainer,
 } from './style';
 import { ReactComponent as ArrowDown } from 'src/assets/arrowDownBlack.svg';
-import {ReactComponent as LegendGray} from 'src/assets/legendGray.svg';
-import {ReactComponent as LegendPink} from 'src/assets/legendPink.svg';
+import { ReactComponent as LegendGray } from 'src/assets/legendGray.svg';
+import { ReactComponent as LegendPink } from 'src/assets/legendPink.svg';
+import Chart from 'src/components/Chart';
 
 const leftSectionContent = [
   { title: 'Loja', highlight: 'Estilo Pri' },
@@ -28,11 +29,19 @@ const MainBoard = () => {
             <span>JULHO 2020</span>
           </div>
           <div className="rightSide">
-            <p><LegendPink/>Este mês</p>
-            <p><LegendGray/>Mês passado</p>
+            <p>
+              <LegendPink />
+              Este mês
+            </p>
+            <p>
+              <LegendGray />
+              Mês passado
+            </p>
           </div>
         </ChartHeader>
-        <ChartContainer />
+        <ChartContainer>
+          <Chart />
+        </ChartContainer>
       </LeftSectionContainer>
       <RightSectionContainer>
         {leftSectionContent.map((content, index) => {
