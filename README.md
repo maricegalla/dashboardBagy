@@ -49,6 +49,4 @@ Inicie o Front-End
   npm start
 ```
 
-![ReadMe](https://user-images.githubusercontent.com/76533793/149579905-5270160b-5d8f-4420-9c49-1cb0da077513.png)
-
-
+![ReadMe](https://user-images.githubusercontent.com/76533793/149580119-63189e39-76a8-4efe-96c7-a81a120c0310.png)
