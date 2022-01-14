@@ -48,6 +48,9 @@ Inicie o Front-End
 ```bash
   npm start
 ```
+## Stack utilizada
+
+**Front-End:** ReactJs & Styled Components.
 
 ## Screenshot
 
