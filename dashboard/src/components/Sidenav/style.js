@@ -18,13 +18,20 @@ const SidenavContainer = styled.div`
     margin-bottom: 40px;
   }
 
+  .config {
+    margin-top: 30px;
+  }
+
   .active {
     color: #fff;
     background-color: #463747 !important;
-    border: 1px solid #e5e5e5;
+    border-right: 1px solid #e5e5e5;
+    border-top: 1px solid #e5e5e5;
+    border-bottom: 1px solid #e5e5e5;
+    border-left: 3px solid #fc3c8d;
   }
 
-  & > a {
+  a {
     display: flex;
     align-items: center;
     justify-content: flex-start;

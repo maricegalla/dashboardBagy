@@ -23,17 +23,13 @@ const sideNavContent = [
 ];
 
 const Sidenav = () => {
-
-  const location = useLocation()
+  const location = useLocation();
   const path = location.pathname;
 
-
   const setActive = (path) => {
-    const elements = document.querySelectorAll(".active");
+    const elements = document.querySelectorAll('.active');
     if (elements.length >= 1) {
-      elements.forEach((element) => (
-        element.classList.remove("active")
-      ));
+      elements.forEach((element) => element.classList.remove('active'));
       document.getElementById(path).classList.add('active');
     }
     document.getElementById(path).classList.add('active');
@@ -46,12 +42,19 @@ const Sidenav = () => {
   return (
     <SidenavContainer>
       <Logo className="logo" />
-      {sideNavContent.map((content, index) => (
-        <Link id={content.link} key={index} to={content.link}>
-          <img src={content.image} alt={content.name} />
-          {content.name}
-        </Link>
-      ))}
+      {sideNavContent.map((content, index) =>
+        content.name === 'Configurações' ? (
+          <Link id={content.link} key={index} to={content.link} className="config">
+            <img src={content.image} alt={content.name} />
+            {content.name}
+          </Link>
+        ) : (
+          <Link id={content.link} key={index} to={content.link}>
+            <img src={content.image} alt={content.name} />
+            {content.name}
+          </Link>
+        )
+      )}
     </SidenavContainer>
   );
 };
