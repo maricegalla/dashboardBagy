@@ -4,7 +4,6 @@ import {
   LeftTableContainer,
   TitleContainer,
 } from './style';
-import { ReactComponent as ScrollBar } from 'src/assets/scrollBar.svg';
 import { ReactComponent as ArrowDown } from 'src/assets/arrowDown.svg';
 import api from 'src/services/api';
 
@@ -20,10 +19,10 @@ const LeftTable = () => {
   useEffect(() => {
     getStores();
   }, []);
-  
+
   return (
     <MediumChartContainer>
-      <LeftTableContainer>
+      <div>
         <TitleContainer>
           <div>
             <h3>Total de Compras</h3>
@@ -40,23 +39,24 @@ const LeftTable = () => {
             </span>
           </div>
         </TitleContainer>
-        {stores.map((store, index) =>
-          index + 1 < stores.length ? (
-            <div key={store.id}>
-              <span>{store.name}</span>
-              <p>{store.sales} compras</p>
-              <p>R$ {store.totalIncome},00</p>
-            </div>
-          ) : (
-            <div key={store.id}>
-              <span className="noBorder">{store.name}</span>
-              <p className="noBorder">{store.sales} compras</p>
-              <p className="noBorder">R$ {store.totalIncome},00</p>
-            </div>
-          )
-        )}
-      </LeftTableContainer>
-      <ScrollBar />
+        <LeftTableContainer>
+          {stores.map((store, index) =>
+            index + 1 < stores.length ? (
+              <div key={store.id}>
+                <span>{store.name}</span>
+                <p>{store.sales} compras</p>
+                <p className="right">R$ {store.totalIncome},00</p>
+              </div>
+            ) : (
+              <div key={store.id}>
+                <span className="noBorder">{store.name}</span>
+                <p className="noBorder">{store.sales} compras</p>
+                <p className="noBorder right">R$ {store.totalIncome},00</p>
+              </div>
+            )
+          )}
+        </LeftTableContainer>
+      </div>
     </MediumChartContainer>
   );
 };

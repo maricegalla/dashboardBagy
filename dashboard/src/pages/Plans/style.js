@@ -1,7 +1,7 @@
 import styled from 'styled-components'
 
 const PlansAndGoalsContentContainer = styled.div`
-padding-left: 260px;
+padding-left: 250px;
   height: 100vh;
   width: 100vw;
 

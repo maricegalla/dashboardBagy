@@ -1,15 +1,15 @@
 import React from 'react';
 import Sidenav from 'src/components/Sidenav';
 import Routes from 'src/Routes'
-import { BrowserRouter } from 'react-router-dom';
 import './App.css';
+import Provider from './context/provider';
 
 const App = () => {
   return (
-    <BrowserRouter>
+    <Provider >
       <Sidenav />
       <Routes />
-    </BrowserRouter>
+    </Provider>
   );
 };
 

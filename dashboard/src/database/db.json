@@ -22,7 +22,14 @@
     "name": "Loja Belíssima",
     "sales": 89,
     "totalIncome": 218.0
+  },
+  {
+    "id": 5,
+    "name": "Pão Natural",
+    "sales": 50,
+    "totalIncome": 580.0
   }
+  
 ],
 "products": [
   {
@@ -56,6 +63,14 @@
     "productPrice": "19,90",
     "date": "17/07/20",
     "storeId": 4
+  },
+  {
+    "id":5,
+    "productName": "Bisnaga",
+    "productId": "#5",
+    "productPrice": "10,90",
+    "date": "17/07/20",
+    "storeId": 5
   }
 ],
 "mainInfo":[{

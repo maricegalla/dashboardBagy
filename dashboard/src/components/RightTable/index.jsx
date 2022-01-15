@@ -4,7 +4,6 @@ import {
   RightTableContainer,
   TitleContainer,
 } from './style';
-import { ReactComponent as ScrollBar } from 'src/assets/scrollBar.svg';
 import api from 'src/services/api';
 
 const headerContent = [
@@ -34,56 +33,63 @@ const RightTable = () => {
     getProducts();
     getStores();
   }, []);
-  
+
   return (
     <MediumChartContainer>
-      <RightTableContainer>
+      <div>
         <TitleContainer>
           <div>
-            {headerContent.map((header, index) => (<h3 key={index}>{header.title}</h3>))}
+            {headerContent.map((header, index) => (
+              <h3 key={index}>{header.title}</h3>
+            ))}
           </div>
         </TitleContainer>
-        {products.map((product, index) =>
-          index + 1 < products.length ? (
-            <div key={product.id}>
-              <p>
-                {product.productName} {product.productId}
-              </p>
-              {stores.map((store, index) => {
-                if (store.id === product.storeId) {
-                  return <p key={index}>{store.name}</p>;
-                }
-                return '';
-              })}
-              <p>
-                <button className="blue">R$ {product.productPrice}</button>
-              </p>
-              <p>
-                <button className="yellow">{product.date}</button>
-              </p>
-            </div>
-          ) : (
-            <div key={product.id}>
-              <p className="noBorder">
-                {product.productName} {product.productId}
-              </p>
-              {stores.map((store, index) => {
-                if (store.id === product.storeId) {
-                  return <p key={index} className="noBorder">{store.name}</p>;
-                }
-                return '';
-              })}
-              <p className="noBorder">
-                <button className=" blue">R$ {product.productPrice}</button>
-              </p>
-              <p className="noBorder">
-                <button className="yellow">{product.date}</button>
-              </p>
-            </div>
-          )
-        )}
-      </RightTableContainer>
-      <ScrollBar />
+        <RightTableContainer>
+          {products.map((product, index) =>
+            index + 1 < products.length ? (
+              <div key={product.id}>
+                <p>
+                  {product.productName} {product.productId}
+                </p>
+                {stores.map((store, index) => {
+                  if (store.id === product.storeId) {
+                    return <p key={index}>{store.name}</p>;
+                  }
+                  return '';
+                })}
+                <p>
+                  <button className="blue">R$ {product.productPrice}</button>
+                </p>
+                <p>
+                  <button className="yellow">{product.date}</button>
+                </p>
+              </div>
+            ) : (
+              <div key={product.id}>
+                <p className="noBorder">
+                  {product.productName} {product.productId}
+                </p>
+                {stores.map((store, index) => {
+                  if (store.id === product.storeId) {
+                    return (
+                      <p key={index} className="noBorder">
+                        {store.name}
+                      </p>
+                    );
+                  }
+                  return '';
+                })}
+                <p className="noBorder">
+                  <button className=" blue">R$ {product.productPrice}</button>
+                </p>
+                <p className="noBorder">
+                  <button className="yellow">{product.date}</button>
+                </p>
+              </div>
+            )
+          )}
+        </RightTableContainer>
+      </div>
     </MediumChartContainer>
   );
 };
