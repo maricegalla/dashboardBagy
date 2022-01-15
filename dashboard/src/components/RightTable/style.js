@@ -78,18 +78,21 @@ const RightTableContainer = styled.div`
     }
 
     .blue {
+      display: flex;
+      align-items: center;
       background-color: #2f80ed;
       font-weight: 600;
       width: 80%;
       color: #fff;
       height: 24px;
-      align-self: center;
       justify-content: center;
       padding: 0;
       border-radius: 5px;
     }
 
     .yellow {
+      display: flex;
+      align-items: center;
       background-color: #fec400;
       font-weight: 600;
       width: 80%;

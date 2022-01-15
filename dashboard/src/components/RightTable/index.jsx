@@ -58,10 +58,10 @@ const RightTable = () => {
                   return '';
                 })}
                 <p>
-                  <button className="blue">R$ {product.productPrice}</button>
+                  <span className="blue">R$ {product.productPrice}</span>
                 </p>
                 <p>
-                  <button className="yellow">{product.date}</button>
+                  <span className="yellow">{product.date}</span>
                 </p>
               </div>
             ) : (
