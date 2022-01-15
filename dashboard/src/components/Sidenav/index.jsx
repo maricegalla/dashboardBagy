@@ -1,5 +1,5 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
+import React, { useEffect } from 'react';
+import { Link, useLocation } from 'react-router-dom';
 import { SidenavContainer } from './style';
 import { ReactComponent as Logo } from 'src/assets/logo.svg';
 import graph from 'src/assets/graph.svg';
@@ -23,6 +23,26 @@ const sideNavContent = [
 ];
 
 const Sidenav = () => {
+
+  const location = useLocation()
+  const path = location.pathname;
+
+
+  const setActive = (path) => {
+    const elements = document.querySelectorAll(".active");
+    if (elements.length >= 1) {
+      elements.forEach((element) => (
+        element.classList.remove("active")
+      ));
+      document.getElementById(path).classList.add('active');
+    }
+    document.getElementById(path).classList.add('active');
+  };
+
+  useEffect(() => {
+    setActive(path);
+  }, [path]);
+
   return (
     <SidenavContainer>
       <Logo className="logo" />

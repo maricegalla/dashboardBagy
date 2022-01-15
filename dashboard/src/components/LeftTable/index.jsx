@@ -20,6 +20,7 @@ const LeftTable = () => {
   useEffect(() => {
     getStores();
   }, []);
+  
   return (
     <MediumChartContainer>
       <LeftTableContainer>

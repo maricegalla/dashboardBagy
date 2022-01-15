@@ -26,7 +26,7 @@ const MainBoard = () => {
         <ChartHeader>
           <div>
             <h3>Total de Faturamento Mensal</h3>
-            <span>JULHO 2020</span>
+            <span>Julho 2020</span>
           </div>
           <div className="rightSide">
             <p>

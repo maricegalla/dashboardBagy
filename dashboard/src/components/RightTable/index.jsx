@@ -34,6 +34,7 @@ const RightTable = () => {
     getProducts();
     getStores();
   }, []);
+  
   return (
     <MediumChartContainer>
       <RightTableContainer>
