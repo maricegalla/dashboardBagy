@@ -8,6 +8,8 @@ const Provider = ({ children }) => {
   const [products, setProducts] = useState([]);
   const [chartData, setChartData] = useState([]);
   const [info, setInfo] = useState({});
+  const [choice, setChoice] = useState("");
+  const [width, setWidth] = useState("130px");
 
   const getStores = async () => {
     const data = await api.get('/stores');
@@ -50,6 +52,10 @@ const Provider = ({ children }) => {
     products,
     chartData,
     info,
+    choice,
+    setChoice,
+    width,
+    setWidth,
   };
 
   return <Context.Provider value={contextValue}>{children}</Context.Provider>;

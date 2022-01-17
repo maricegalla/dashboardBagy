@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import arrowDown from 'src/assets/arrowDownBlack.svg';
 
 const BigChartContainer = styled.div`
   display: flex;
@@ -111,6 +112,23 @@ const RightSectionContainer = styled.div`
 
     .green {
       color: #219653;
+    }
+
+    select {
+      -webkit-appearance: none;
+      -moz-appearance: none;
+      appearance: none;
+      background-color: transparent;
+      font-size: 24px;
+      color: #252733;
+      font-weight: 600;
+      text-align: center;
+      text-decoration: underline;
+      background: url(${arrowDown}) bottom right no-repeat #fff;
+    }
+
+    select:focus {
+      outline: none !important;
     }
   }
 `;
