@@ -22,13 +22,16 @@ const MainBoard = () => {
     month,
     choice,
     chartData,
-    setChart
+    setChart,
+    chart,
+     revenue,
+    setRevenue,
   } = useContext(Context);
 
   const rightSectionContent = [
     { title: 'Mês', highlight: month },
     { title: 'Ano', highlight: selectedYear },
-    { title: 'Total de Faturamento', highlight: 'R$ 45.000,00' },
+    { title: 'Total de Faturamento', highlight: `R$ ${revenue}.000,00` },
     { title: 'Análise comparativa', highlight: 'Positivo' },
   ];
 
@@ -46,11 +49,20 @@ const MainBoard = () => {
     setChart(myChart);
   }, [chartData, choice, setChart]);
 
-  
+  const revenueRender = useCallback(async () => {
+    const render = await chart.map((item) => { return item.Julho; }).reduce((a, b) => { return a + b; }, 0) / chart.length;
+    if (!render) {
+      setRevenue('');
+    }
+    const round = Math.ceil(render,0)
+    setRevenue(round);
+  }, [chart, setRevenue]);
+
   useEffect(() => {
-    chartRender()
-  }, [chartRender]);
- 
+    chartRender();
+    revenueRender()
+  }, [chartRender, revenueRender]);
+
   return (
     <BigChartContainer>
       <LeftSectionContainer>
