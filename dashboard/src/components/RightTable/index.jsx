@@ -1,10 +1,10 @@
-import React, { useEffect, useState } from 'react';
+import React, { useContext } from 'react';
 import {
   MediumChartContainer,
   RightTableContainer,
   TitleContainer,
 } from './style';
-import api from 'src/services/api';
+import Context from 'src/context/context';
 
 const headerContent = [
   { title: 'Produto' },
@@ -14,25 +14,7 @@ const headerContent = [
 ];
 
 const RightTable = () => {
-  const [products, setProducts] = useState([]);
-  const [stores, setStores] = useState([]);
-
-  const getStores = async () => {
-    const data = await api.get('/stores');
-    const allStores = data.data;
-    setStores(allStores);
-  };
-
-  const getProducts = async () => {
-    const data = await api.get('/products');
-    const allProducts = data.data;
-    setProducts(allProducts);
-  };
-
-  useEffect(() => {
-    getProducts();
-    getStores();
-  }, []);
+  const { stores, products } = useContext(Context);
 
   return (
     <MediumChartContainer>

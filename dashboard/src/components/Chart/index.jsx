@@ -1,21 +1,11 @@
-import React, { useEffect, useState } from 'react';
+import React, { useContext } from 'react';
 import { ChartContentContainer } from './style';
 import { AreaChart, Area, YAxis, Tooltip, CartesianGrid } from 'recharts';
 import CustomTooltip from 'src/components/CustomTooltip';
-import api from 'src/services/api';
+import Context from 'src/context/context';
 
 const Chart = () => {
-  const [chartData, setChartData] = useState([]);
-
-  const getData = async () => {
-    const data = await api.get('/chartData');
-    const allData = data.data;
-    setChartData(allData);
-  };
-
-  useEffect(() => {
-    getData();
-  }, []);
+  const { chartData } = useContext(Context);
 
   return (
     <ChartContentContainer>

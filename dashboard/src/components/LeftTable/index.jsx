@@ -1,24 +1,14 @@
-import React, { useEffect, useState } from 'react';
+import React, { useContext } from 'react';
 import {
   MediumChartContainer,
   LeftTableContainer,
   TitleContainer,
 } from './style';
 import { ReactComponent as ArrowDown } from 'src/assets/arrowDown.svg';
-import api from 'src/services/api';
+import Context from 'src/context/context';
 
 const LeftTable = () => {
-  const [stores, setStores] = useState([]);
-
-  const getStores = async () => {
-    const data = await api.get('/stores');
-    const allStores = data.data;
-    setStores(allStores);
-  };
-
-  useEffect(() => {
-    getStores();
-  }, []);
+  const { stores } = useContext(Context);
 
   return (
     <MediumChartContainer>
