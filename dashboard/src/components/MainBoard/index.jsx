@@ -1,4 +1,4 @@
-import React, { useContext } from 'react';
+import React, { useContext, useCallback, useEffect } from 'react';
 import {
   BigChartContainer,
   ChartHeader,
@@ -12,21 +12,45 @@ import { ReactComponent as LegendPink } from 'src/assets/legendPink.svg';
 import Chart from 'src/components/Chart';
 import Context from 'src/context/context';
 
-const rightSectionContent = [
-  { title: 'Mês', highlight: 'Julho' },
-  { title: 'Ano', highlight: '2020' },
-  { title: 'Total de Faturamento', highlight: 'R$ 45.000,00' },
-  { title: 'Análise comparativa', highlight: 'Positivo' },
-];
-
 const MainBoard = () => {
-  const { stores, setChoice, choice, width, setWidth } = useContext(Context);
+  const {
+    stores,
+    setChoice,
+    width,
+    setWidth,
+    selectedYear,
+    month,
+    choice,
+    chartData,
+    setChart
+  } = useContext(Context);
+
+  const rightSectionContent = [
+    { title: 'Mês', highlight: month },
+    { title: 'Ano', highlight: selectedYear },
+    { title: 'Total de Faturamento', highlight: 'R$ 45.000,00' },
+    { title: 'Análise comparativa', highlight: 'Positivo' },
+  ];
 
   const handleChoice = (event) => {
     setChoice(event.target.value);
     setWidth(`${14.5 * event.target.value.length}px`);
   };
 
+  const chartRender = useCallback(async () => {
+    const render = await chartData.find((data) => data.storyName === choice);
+    if (!render) {
+      setChart('');
+    }
+    const myChart = render.year;
+    setChart(myChart);
+  }, [chartData, choice, setChart]);
+
+  
+  useEffect(() => {
+    chartRender()
+  }, [chartRender]);
+ 
   return (
     <BigChartContainer>
       <LeftSectionContainer>

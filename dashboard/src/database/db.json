@@ -1,195 +1,196 @@
-{ "stores" : [
-  {
-    "id": 1,
-    "name": "Estilo Pri",
-    "sales": 250,
-    "totalIncome": 4238.0
-  },
-  {
-    "id": 2,
-    "name": "Vilma Calçados",
-    "sales": 187,
-    "totalIncome": 1005.0
-  },
-  {
-    "id": 3,
-    "name": "Mary Lingerie",
-    "sales": 124,
-    "totalIncome": 914.0
-  },
-  {
-    "id": 4,
-    "name": "Loja Belíssima",
-    "sales": 89,
-    "totalIncome": 218.0
-  },
-  {
-    "id": 5,
-    "name": "Pão Natural",
-    "sales": 50,
-    "totalIncome": 580.0
-  }
-  
-],
-"products": [
-  {
-    "id": 1,
-    "productName": "Brincos",
-    "productId": "#023",
-    "productPrice": "23,90",
-    "date": "17/07/20",
-    "storeId": 1
-  },
-  {
-    "id": 2,
-    "productName": "Sandália",
-    "productId": "#54",
-    "productPrice": "89,90",
-    "date": "17/07/20",
-    "storeId": 2
-  },
-  {
-    "id":3,
-    "productName": "Conjunto",
-    "productId": "#95",
-    "productPrice": "49,90",
-    "date": "17/07/20",
-    "storeId": 3
-  },
- {
-    "id":4,
-    "productName": "Body",
-    "productId": "#77",
-    "productPrice": "19,90",
-    "date": "17/07/20",
-    "storeId": 4
-  },
-  {
-    "id":5,
-    "productName": "Bisnaga",
-    "productId": "#5",
-    "productPrice": "10,90",
-    "date": "17/07/20",
-    "storeId": 5
-  }
-],
-"mainInfo":[{
-  "id": 1,
-  "totalIncome": "100.000,00",
-  "numberOfStores": 7213.00,
-  "monthlyGoal": "110.000,00",
-  "featuredStore": "Estilo Pri"
-}],
-"chartData" :[{
-  "storyName": "Estilo Pri",
-  "year": 
-    [
-      {
-        "day": 1,
-        "Junho": 32,
-        "Julho": 15
-      },
-      {
-        "day": 2,
-        "Junho": 34,
-        "Julho": 22
-      },
-      {
-        "day": 3,
-        "Junho": 31,
-        "Julho": 26
-      },
-      {
-        "day": 4,
-        "Junho": 28,
-        "Julho": 28
-      },
-      {
-        "day": 5,
-        "Junho": 26,
-        "Julho": 29
-      },
-      {
-        "day": 6,
-        "Junho": 25,
-        "Julho": 28
-      },
-      {
-        "day": 7,
-        "Junho": 26,
-        "Julho": 32
-      },
-      {
-        "day": 8,
-        "Junho": 31,
-        "Julho": 44
-      },
-      {
-        "day": 9,
-        "Junho": 34,
-        "Julho": 51
-      },
-      {
-        "day": 10,
-        "Junho": 35,
-        "Julho": 41
-      },
-      {
-        "day": 11,
-        "Junho": 31,
-        "Julho": 26
-      },
-      {
-        "day": 12,
-        "Junho": 25,
-        "Julho": 18
-      },
-      {
-        "day": 13,
-        "Junho": 20,
-        "Julho": 20
-      },
-      {
-        "day": 14,
-        "Junho": 18,
-        "Julho": 26
-      },
-      {
-        "day": 15,
-        "Junho": 23,
-        "Julho": 35
-      },
-      {
-        "day": 16,
-        "Junho": 36,
-        "Julho": 42
-      },
-      {
-        "day": 17,
-        "Junho": 42,
-        "Julho": 46
-      },
-      {
-        "day": 18,
-        "Junho": 34,
-        "Julho": 47
-      },
-      {
-        "day": 19,
-        "Junho": 29,
-        "Julho": 45
-      },
-      {
-        "day": 20,
-        "Junho": 36,
-        "Julho": 38
-      }
-    ]
-  },
-  {
-    "storyName": "Vilma Calçados",
-    "year": 
-      [
+{
+  "stores": [
+    {
+      "id": 1,
+      "name": "Estilo Pri",
+      "sales": 250,
+      "totalIncome": 4238.0
+    },
+    {
+      "id": 2,
+      "name": "Vilma Calçados",
+      "sales": 187,
+      "totalIncome": 1005.0
+    },
+    {
+      "id": 3,
+      "name": "Mary Lingerie",
+      "sales": 124,
+      "totalIncome": 914.0
+    },
+    {
+      "id": 4,
+      "name": "Loja Belíssima",
+      "sales": 89,
+      "totalIncome": 218.0
+    },
+    {
+      "id": 5,
+      "name": "Pão Natural",
+      "sales": 50,
+      "totalIncome": 580.0
+    }
+  ],
+  "products": [
+    {
+      "id": 1,
+      "productName": "Brincos",
+      "productId": "#023",
+      "productPrice": "23,90",
+      "date": "17/07/20",
+      "storeId": 1
+    },
+    {
+      "id": 2,
+      "productName": "Sandália",
+      "productId": "#54",
+      "productPrice": "89,90",
+      "date": "17/07/20",
+      "storeId": 2
+    },
+    {
+      "id": 3,
+      "productName": "Conjunto",
+      "productId": "#95",
+      "productPrice": "49,90",
+      "date": "17/07/20",
+      "storeId": 3
+    },
+    {
+      "id": 4,
+      "productName": "Body",
+      "productId": "#77",
+      "productPrice": "19,90",
+      "date": "17/07/20",
+      "storeId": 4
+    },
+    {
+      "id": 5,
+      "productName": "Bisnaga",
+      "productId": "#5",
+      "productPrice": "10,90",
+      "date": "17/07/20",
+      "storeId": 5
+    }
+  ],
+  "mainInfo": [
+    {
+      "id": 1,
+      "totalIncome": "100.000,00",
+      "numberOfStores": 7213.0,
+      "monthlyGoal": "110.000,00",
+      "featuredStore": "Estilo Pri"
+    }
+  ],
+  "chartData": [
+    {
+      "storyName": "Estilo Pri",
+      "year": [
+        {
+          "day": 1,
+          "Junho": 32,
+          "Julho": 15
+        },
+        {
+          "day": 2,
+          "Junho": 34,
+          "Julho": 22
+        },
+        {
+          "day": 3,
+          "Junho": 31,
+          "Julho": 26
+        },
+        {
+          "day": 4,
+          "Junho": 28,
+          "Julho": 28
+        },
+        {
+          "day": 5,
+          "Junho": 26,
+          "Julho": 29
+        },
+        {
+          "day": 6,
+          "Junho": 25,
+          "Julho": 28
+        },
+        {
+          "day": 7,
+          "Junho": 26,
+          "Julho": 32
+        },
+        {
+          "day": 8,
+          "Junho": 31,
+          "Julho": 44
+        },
+        {
+          "day": 9,
+          "Junho": 34,
+          "Julho": 51
+        },
+        {
+          "day": 10,
+          "Junho": 35,
+          "Julho": 41
+        },
+        {
+          "day": 11,
+          "Junho": 31,
+          "Julho": 26
+        },
+        {
+          "day": 12,
+          "Junho": 25,
+          "Julho": 18
+        },
+        {
+          "day": 13,
+          "Junho": 20,
+          "Julho": 20
+        },
+        {
+          "day": 14,
+          "Junho": 18,
+          "Julho": 26
+        },
+        {
+          "day": 15,
+          "Junho": 23,
+          "Julho": 35
+        },
+        {
+          "day": 16,
+          "Junho": 36,
+          "Julho": 42
+        },
+        {
+          "day": 17,
+          "Junho": 42,
+          "Julho": 46
+        },
+        {
+          "day": 18,
+          "Junho": 34,
+          "Julho": 47
+        },
+        {
+          "day": 19,
+          "Junho": 29,
+          "Julho": 45
+        },
+        {
+          "day": 20,
+          "Junho": 36,
+          "Julho": 38
+        }
+      ]
+    },
+    {
+      "storyName": "Vilma Calçados",
+      "year": [
         {
           "day": 1,
           "Junho": 15,
@@ -291,6 +292,321 @@
           "Julho": 36
         }
       ]
+    },
+    {
+      "storyName": "Mary Lingerie",
+      "year": [
+        {
+          "day": 1,
+          "Junho": 26,
+          "Julho": 31
+        },
+        {
+          "day": 2,
+          "Junho": 18,
+          "Julho": 25
+        },
+        {
+          "day": 3,
+          "Junho": 20,
+          "Julho": 20
+        },
+        {
+          "day": 4,
+          "Junho": 26,
+          "Julho": 18
+        },
+        {
+          "day": 5,
+          "Junho": 35,
+          "Julho": 23
+        },
+        {
+          "day": 6,
+          "Junho": 42,
+          "Julho": 36
+        },
+        {
+          "day": 7,
+          "Junho": 46,
+          "Julho": 42
+        },
+        {
+          "day": 8,
+          "Junho": 47,
+          "Julho": 34
+        },
+        {
+          "day": 9,
+          "Junho": 45,
+          "Julho": 29
+        },
+        {
+          "day": 10,
+          "Junho": 38,
+          "Julho": 36
+        },
+        {
+          "day": 11,
+          "Junho": 15,
+          "Julho": 32
+        },
+        {
+          "day": 12,
+          "Junho": 22,
+          "Julho": 34
+        },
+        {
+          "day": 13,
+          "Junho": 26,
+          "Julho": 31
+        },
+        {
+          "day": 14,
+          "Junho": 28,
+          "Julho": 28
+        },
+        {
+          "day": 15,
+          "Junho": 29,
+          "Julho": 26
+        },
+        {
+          "day": 16,
+          "Junho": 28,
+          "Julho": 25
+        },
+        {
+          "day": 17,
+          "Junho": 32,
+          "Julho": 26
+        },
+        {
+          "day": 18,
+          "Junho": 44,
+          "Julho": 31
+        },
+        {
+          "day": 19,
+          "Junho": 51,
+          "Julho": 34
+        },
+        {
+          "day": 20,
+          "Junho": 41,
+          "Julho": 35
+        }
+      ]
+    },
+    {
+      "storyName": "Loja Belíssima",
+      "year": [
+        {
+          "day": 1,
+          "Junho": 31,
+          "Julho": 26
+        },
+        {
+          "day": 2,
+          "Junho": 25,
+          "Julho": 18
+        },
+        {
+          "day": 3,
+          "Junho": 20,
+          "Julho": 20
+        },
+        {
+          "day": 4,
+          "Junho": 18,
+          "Julho": 26
+        },
+        {
+          "day": 5,
+          "Junho": 23,
+          "Julho": 35
+        },
+        {
+          "day": 6,
+          "Junho": 36,
+          "Julho": 42
+        },
+        {
+          "day": 7,
+          "Junho": 42,
+          "Julho": 46
+        },
+        {
+          "day": 8,
+          "Junho": 34,
+          "Julho": 47
+        },
+        {
+          "day": 9,
+          "Junho": 29,
+          "Julho": 45
+        },
+        {
+          "day": 10,
+          "Junho": 36,
+          "Julho": 38
+        },
+        {
+          "day": 11,
+          "Junho": 32,
+          "Julho": 15
+        },
+        {
+          "day": 12,
+          "Junho": 34,
+          "Julho": 22
+        },
+        {
+          "day": 13,
+          "Junho": 31,
+          "Julho": 26
+        },
+        {
+          "day": 14,
+          "Junho": 28,
+          "Julho": 28
+        },
+        {
+          "day": 15,
+          "Junho": 26,
+          "Julho": 29
+        },
+        {
+          "day": 16,
+          "Junho": 25,
+          "Julho": 28
+        },
+        {
+          "day": 17,
+          "Junho": 26,
+          "Julho": 32
+        },
+        {
+          "day": 18,
+          "Junho": 31,
+          "Julho": 44
+        },
+        {
+          "day": 19,
+          "Junho": 34,
+          "Julho": 51
+        },
+        {
+          "day": 20,
+          "Junho": 35,
+          "Julho": 41
+        }
+      ]
+    },
+    {
+      "storyName": "Pão Natural",
+      "year": [
+        {
+          "day": 1,
+          "Junho": 36,
+          "Julho": 42
+        },
+        {
+          "day": 2,
+          "Junho": 42,
+          "Julho": 46
+        },
+        {
+          "day": 3,
+          "Junho": 34,
+          "Julho": 47
+        },
+        {
+          "day": 4,
+          "Junho": 29,
+          "Julho": 45
+        },
+        {
+          "day": 5,
+          "Junho": 36,
+          "Julho": 38
+        },
+        {
+          "day": 6,
+          "Junho": 31,
+          "Julho": 26
+        },
+        {
+          "day": 7,
+          "Junho": 25,
+          "Julho": 18
+        },
+        {
+          "day": 8,
+          "Junho": 20,
+          "Julho": 20
+        },
+        {
+          "day": 9,
+          "Junho": 18,
+          "Julho": 26
+        },
+        {
+          "day": 10,
+          "Junho": 23,
+          "Julho": 35
+        },
+        {
+          "day": 11,
+          "Junho": 26,
+          "Julho": 32
+        },
+        {
+          "day": 12,
+          "Junho": 31,
+          "Julho": 44
+        },
+        {
+          "day": 13,
+          "Junho": 34,
+          "Julho": 51
+        },
+        {
+          "day": 14,
+          "Junho": 35,
+          "Julho": 41
+        },
+        {
+          "day": 15,
+          "Junho": 32,
+          "Julho": 15
+        },
+        {
+          "day": 16,
+          "Junho": 34,
+          "Julho": 22
+        },
+        {
+          "day": 17,
+          "Junho": 31,
+          "Julho": 26
+        },
+        {
+          "day": 18,
+          "Junho": 28,
+          "Julho": 28
+        },
+        {
+          "day": 19,
+          "Junho": 26,
+          "Julho": 29
+        },
+        {
+          "day": 20,
+          "Junho": 25,
+          "Julho": 28
+        }
+      ]
     }
-]
+  ]
 }

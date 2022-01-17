@@ -11,6 +11,9 @@ const Provider = ({ children }) => {
   const [choice, setChoice] = useState('Estilo Pri');
   const [width, setWidth] = useState('130px');
   const [chart, setChart] = useState();
+  const [month, setMonth] = useState('Julho');
+  const [selectedYear, setSelectedYear] = useState('2020');
+  const [revenue, setRevenue] = useState();
 
   const getStores = async () => {
     const data = await api.get('/stores');
@@ -40,26 +43,13 @@ const Provider = ({ children }) => {
     window.scrollTo({ top: 0, behavior: 'smooth' });
   }, []);
 
-  const chartRender = useCallback(
-    async (choice) => {
-      const render = await chartData.find((data) => data.storyName === choice);
-      if (!render) {
-        setChart('')
-      }
-      const myChart = render.year
-      setChart(myChart)
-    },
-    [chartData]
-  );
-
   useEffect(() => {
     goToTop();
     getStores();
     getProducts();
     getData();
     getInfo();
-    chartRender(choice);
-  }, [chartRender, choice, goToTop]);
+  }, [goToTop]);
 
   const contextValue = {
     stores,
@@ -70,6 +60,15 @@ const Provider = ({ children }) => {
     width,
     setWidth,
     chart,
+    setChart,
+    month,
+    setMonth,
+    selectedYear,
+    setSelectedYear,
+    revenue,
+    setRevenue,
+    chartData,
+    setChartData,
   };
 
   return <Context.Provider value={contextValue}>{children}</Context.Provider>;
