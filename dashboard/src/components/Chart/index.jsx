@@ -5,14 +5,14 @@ import CustomTooltip from 'src/components/CustomTooltip';
 import Context from 'src/context/context';
 
 const Chart = () => {
-  const { chartData } = useContext(Context);
+  const { chart } = useContext(Context);
 
   return (
     <ChartContentContainer>
       <AreaChart
         width={800}
         height={360}
-        data={chartData}
+        data={chart}
         margin={{
           top: 30,
           right: -30,

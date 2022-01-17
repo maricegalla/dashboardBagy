@@ -56,7 +56,7 @@ const MainBoard = () => {
           <select
             onChange={handleChoice}
             value={choice}
-            style={{ width: width}}
+            style={{ width: width }}
           >
             {stores.map((store, index) => (
               <option key={index} value={store.name}>

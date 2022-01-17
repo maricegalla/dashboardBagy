@@ -8,8 +8,9 @@ const Provider = ({ children }) => {
   const [products, setProducts] = useState([]);
   const [chartData, setChartData] = useState([]);
   const [info, setInfo] = useState({});
-  const [choice, setChoice] = useState("");
-  const [width, setWidth] = useState("130px");
+  const [choice, setChoice] = useState('Estilo Pri');
+  const [width, setWidth] = useState('130px');
+  const [chart, setChart] = useState();
 
   const getStores = async () => {
     const data = await api.get('/stores');
@@ -39,23 +40,36 @@ const Provider = ({ children }) => {
     window.scrollTo({ top: 0, behavior: 'smooth' });
   }, []);
 
+  const chartRender = useCallback(
+    async (choice) => {
+      const render = await chartData.find((data) => data.storyName === choice);
+      if (!render) {
+        setChart('')
+      }
+      const myChart = render.year
+      setChart(myChart)
+    },
+    [chartData]
+  );
+
   useEffect(() => {
     goToTop();
     getStores();
     getProducts();
     getData();
     getInfo();
-  }, [goToTop]);
+    chartRender(choice);
+  }, [chartRender, choice, goToTop]);
 
   const contextValue = {
     stores,
     products,
-    chartData,
     info,
     choice,
     setChoice,
     width,
     setWidth,
+    chart,
   };
 
   return <Context.Provider value={contextValue}>{children}</Context.Provider>;
